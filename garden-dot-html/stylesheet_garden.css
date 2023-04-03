@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  cursor: none;
+  background-color: #e3ccef;
+  background-image: url("assets/backgroundplain.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes cloudframefades {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes cloudfades {
+  0% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+
+@keyframes godrays1animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+p {
+  color: #91a7f7;
+  padding: 20px;
+  border: 2px #e5b4fa;
+  border-radius: 5px;
+  height: 865px;
+}
+
+img.cloudframe1 {
+  position: absolute;
+  z-index: 3;
+}
+
+.center-fit {
+  animation: cloudframefades 5s ease infinite;
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+}
+
+img.godrays {
+  animation: godrays1animation 6s ease infinite;
+  position: absolute;
+  z-index: 3;
+}
+
+img.godrays2 {
+  animation: godrays1animation 8s ease infinite;
+  position: absolute;
+  z-index: 3;
+}
+
+img.user {
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
+
+img.statue1 {
+  position: absolute;
+}
+
+img.statuePicture2 {
+  width: 150px;
+}
+
+img.clouds {
+  animation: cloudfades 7s ease infinite;
+  position: absolute;
+  z-index: 3;
+}
+
+img.cloud2 {
+  position: absolute;
+  z-index: 3;
+}
+
+img.cloud3 {
+  position: absolute;
+  z-index: 3;
+}
